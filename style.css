@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+body {
+  background: #f7f9fc;
+  color: #0f172a;
+}
+
+/* TOPBAR */
+.topbar {
+  height: 64px;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  font-size: 14px;
+  padding: 8px;
+  cursor: pointer;
+  color: #475569;
+}
+
+.nav-item:hover {
+  color: #0f172a;
+}
+
+/* USER */
+.user-menu {
+  position: relative;
+}
+
+.user-trigger {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+}
+
+.chevron {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* USER DROPDOWN */
+.user-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 48px;
+  width: 240px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 30px 60px rgba(0,0,0,.18);
+  padding: 12px;
+}
+
+.user-info {
+  margin-bottom: 10px;
+}
+
+.user-info small {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.user-dropdown a {
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.user-dropdown a:hover {
+  background: #f1f5f9;
+}
+
+.divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 10px 0;
+}
+
+.logout {
+  color: #dc2626;
+}
+
+/* MEGA MENU */
+.mega {
+  display: none;
+  position: absolute;
+  top: 64px;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  z-index: 10;
+}
+
+.mega-content {
+  display: flex;
+  gap: 80px;
+  padding: 36px 96px;
+}
+
+.mega h4 {
+  font-size: 12px;
+  color: #64748b;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.mega a {
+  display: block;
+  padding: 6px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.mega a:hover {
+  color: #2563eb;
+}
+
+/* PAGE */
+.page {
+  padding: 56px 96px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  padding: 36px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.08);
+  font-size: 16px;
+}
